@@ -6,12 +6,11 @@ def reverse_string(user_input):
 	a =''
 	for i in reversed(user_input):
 		a += i
-	print a
-	pass
+	return a
 
 def main():
 	while True:
 		indo = raw_input("What do you need reversed? \n -->")
-		reverse_string(indo)
+		print reverse_string(indo)
 
 if __name__ == "__main__":main()
