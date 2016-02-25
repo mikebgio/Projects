@@ -6,9 +6,15 @@
 
 
 def reverse_string(user_input):
-	print user_input.split()
+	a =''
+	for i in reversed(user_input):
+		a += i
+	print a
 	pass
 
-while True:
-	indo = raw_input("What do you need reversed? \n -->")
-	reverse_string(indo)
+def main():
+	while True:
+		indo = raw_input("What do you need reversed? \n -->")
+		reverse_string(indo)
+
+if __name__ == "__main__":main()
