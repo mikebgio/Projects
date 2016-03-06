@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#THIS ONE IS OLD AND LAME
 """
 Count Words in a String - Counts the number of individual words 
 in a string. For added complexity read these strings 
@@ -17,8 +18,8 @@ def main():
 def count_words(file):
 	with open(file, 'r') as f:
 		read_data = f.read()
-		stripped = read_data.replace('\n',' ')
-		words = stripped.split(' ')
+		stripped = read_data.replace('-',' ')
+		words = stripped.split()
 		print words
 		return len(words)
 
