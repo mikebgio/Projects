@@ -3,13 +3,14 @@
 #and print it out.
 
 def reverse_string(user_input):
-	return user_input[::-1]
+	a =''
+	for i in reversed(user_input):
+		a += i
+	return a
 
 def main():
 	while True:
-		indo = raw_input("What do you need reversed? (Type exit to leave)\n -->")
+		indo = raw_input("What do you need reversed? \n -->")
 		print reverse_string(indo)
-		if indo in ('exit', 'EXIT', 'Exit'):
-			return False
 
 if __name__ == "__main__":main()
